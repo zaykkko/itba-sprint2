@@ -1,0 +1,20 @@
+{
+  "tabWidth": 4,
+  "trailingComma": "none",
+  "bracketSpacing": false,
+  "overrides": [
+    {
+      "files": ["*.html"],
+      "options": {
+        "printWidth": 450
+      }
+    },
+    {
+      "files": [".prettierrc"],
+      "options": {
+        "useTabs": false,
+        "tabWidth": 2
+      }
+    }
+  ]
+}

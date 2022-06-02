@@ -1,0 +1,58 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+#root-app .card .card-header.app-main-header {
+    background-color: #4760ee;
+    color: #fff;
+}
+/* mejor usar el de bootstrap, y añadir todo el temilla en listItemFactory() xd
+#root-app .card .card-body.app-result-body .col-auto:nth-child(1) h4,
+#root-app .card .card-body.app-result-body .col-auto:nth-child(1) h5 {
+    font-weight: normal;
+}
+*/
+#root-app .card .card-body.result-body .result-list-container {
+    background-color: #f5f5f8;
+}
+#root-app .card .card-body.result-body .result-list-container ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(7rem, 0.3fr));
+    list-style: none;
+}
+#root-app .card .card-body.result-body:not(.empty-list) > .result-list-container h5.hidden-title {
+    display: none;
+}
+#root-app .card .card-body.result-body.empty-list .result-list-container > h5 {
+    display: block;
+}
+#root-app .card .card-body.result-body.empty-list .result-list-container > ul {
+    display: none;
+}
+#root-app .card .card-body.result-body .result-list-container ul li {
+    overflow: hidden;
+    position: relative;
+}
+#root-app .card .card-body.result-body .result-list-container ul li button {
+    opacity: 0;
+    position: absolute;
+    text-transform: uppercase;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: opacity 125ms ease-in;
+}
+#root-app .card .card-body.result-body .result-list-container ul li button:hover {
+    opacity: 0.9;
+}
+#root-app .card .card-body.result-body.empty-list .result-calcs-container {
+    display: none;
+}
